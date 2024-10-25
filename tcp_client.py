@@ -29,7 +29,7 @@ def tcp_client(target_host, target_port, data):
 
 
 # setting the data to be sent/requested (this will be passed in as argument for the data parameter)
-http_request = b"GET / HTTP/1.1\r\nHost: 10.10.67.33\r\n\r\n"
+http_request = b"GET / HTTP/1.1\r\nHost: scanme.nmap.org\r\n\r\n"
 
 # calling function
-tcp_client("10.10.67.33" , 80, http_request)
+tcp_client("scanme.nmap.org" , 80, http_request)
