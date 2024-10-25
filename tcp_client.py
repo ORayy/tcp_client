@@ -21,7 +21,7 @@ def tcp_client(target_host, target_port, data):
     print(f"Sending: {data}")
     client.sendall(data)
 
-    # receive data
+    # receive some data back from the server and print response
     response = client.recv(1024)
 
     print(response.decode())
