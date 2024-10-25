@@ -13,11 +13,11 @@ def tcp_client(target_host, target_port, data):
     # create a socket object
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    # connect to client
+    # connect the client the server
     print(f"Connecting to ip: {target_host} on port: {target_port}")
     client.connect((target_host, target_port))
 
-    # sending some data
+    # sending some data to the server
     print(f"Sending: {data}")
     client.sendall(data)
 
